@@ -1,0 +1,18 @@
+# without user input
+arr1=(2 5 8 12)
+echo ${arr1[2]}
+
+# user input
+arr=()
+
+read -p 'Enter the number of elements ' n 
+for((i=0;i<n;i++))
+do
+read arr[$i]
+done
+
+echo 'print the array element';
+for((i=0;i<n;i++))
+do
+echo ${arr[i]}
+done
