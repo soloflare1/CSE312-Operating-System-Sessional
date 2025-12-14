@@ -17,7 +17,7 @@ int main()
         pid[i] = i + 1; // store process id
     }
 
-    // 🔽 Sort in descending order of burst time → LJF
+    // Sort in descending order of burst time → LJF
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
             if (bt[i] < bt[j]) {   // Larger burst time first → LJF
@@ -63,3 +63,23 @@ int main()
 
     return 0;
 }
+
+
+// // Enter Number of Processes: 4
+// // Enter Burst Time for each Process:
+// P1: 5
+// P2: 3
+// P3: 8
+// P4: 6
+
+
+// // Process	Burst Time	Waiting Time	Turnaround Time
+// // P3	    8		    0		    8
+// // P4	    6		    8		    14
+// // P1	    5		    14		    19
+// // P2	    3		    19		    22
+
+// // Average Waiting Time: 10.25
+// // Average Turnaround Time: 15.75
+
+
